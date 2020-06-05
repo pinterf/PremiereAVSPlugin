@@ -22,7 +22,7 @@
 #define _im_avisynth_h
 
 #include "avisynth.h"
-#include  "PrSDKimport.h"
+#include  "PrSDKImport.h"
 
 #define BLANK_CLIP_LENGTH_FRAMES 432000 //5 hours
 
