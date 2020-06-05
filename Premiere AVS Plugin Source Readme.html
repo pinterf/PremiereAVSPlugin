@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<style type="text/css">
+body {
+        color: black;
+        text-align: left;
+        background-color: #cccccc;
+        font-size: medium;
+        font-family: Times New Roman, Palatino, serif;
+}
+p, ul {
+        padding-left: 10%;
+        padding-right: 10%;
+}
+h1 {
+        color: darkblue;
+        font-size: large;
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding-top: 1em;
+        padding-bottom: 1em;
+}
+h2 {
+        padding-left: 2%;
+        font-size: large;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h3 {
+        padding-left: 5%;
+	font-size: medium;
+	font-weight: bold;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding-bottom: 0.5em;
+}
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #555555;
+}
+a:hover {
+    color: #ff0000;
+}
+p.author {
+        text-align: right;
+}
+</style>
+<title>Premiere AVISynth Plugin v1.95 - Source release</title>
+</head>
+<body>
+<h1>Premiere AVISynth Plugin v1.95 - Source release</h1>
+<p>This is an update of the Premiere Avisynth Import Plugin originally written by Ben Rudiak-Gould. It allows Adobe's Premiere video editing package to read Avisynth AVS scripts.</p>
+<p>It is compatible with Premiere 5.x, 6.x and Premiere Pro 1.x, 2.x, CS3, CS4 and all modern versions of Avisynth.</p>
+<p>The homepage for the plugin is <a href="http://videoeditorskit.sourceforge.net/">http://videoeditorskit.sourceforge.net</a>, kindly hosted by <a href="http://sourceforge.net/">Sourceforge</a>. Check the webpage for new releases and full source.</p>
+<p>This plugin is licensed under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> and may be modified and redistributed under the terms of that license. Please see the enclosed file <a href="COPYING.txt">COPYING.txt</a>. As required by the license, full source is provided.</p>
+<p>Please see the <a href="Premiere%20AVS%20Plugin%20Readme.html">normal readme</a> for further details about the using plugin etc.</p>
+<h2>Building Instructions</h2>
+<h3>Premiere Plugin</h3>
+<p>The plugin comes with a VC6 project file im-avisynth.dsw.</p>
+<p>In order to build you will require the following things:</p>
+<ul>
+<li>VC6SP5</li>
+<li>The headers from the Premiere 6.5/Pro SDK placed in Source/premiere-headers (or somewhere in the include path)</li>
+</ul>
+<p>VC7/VC8 (Visual C++ .net / 2005 / 2008) should also work fine - im-avisynth.vcproj is provided</p>
+<p>The plugin should build with no errors or warnings.</p>
+<h3>GUI</h3>
+<p>The GUI may be built using <a href="http://nsis.sourceforge.net">NSIS version 2</a>. Just run 'makensis.exe PremiereAVSGUI.nsi'.</p>
+<p class="author">Tom Ford [tom.ford@compsoc.net] - <i>16th Feb 2009</i></p>
+</body>
+</html>

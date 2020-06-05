@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<style type="text/css">
+body {
+        color: black;
+        text-align: left;
+        background-color: #cccccc;
+        font-size: medium;
+        font-family: Times New Roman, Palatino, serif;
+}
+p, ul {
+        padding-left: 10%;
+        padding-right: 10%;
+}
+h1 {
+        color: darkblue;
+        font-size: large;
+        text-align: center;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding-top: 1em;
+        padding-bottom: 1em;
+}
+h2 {
+        padding-left: 2%;
+        font-size: large;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h3 {
+        padding-left: 5%;
+	font-size: medium;
+	font-weight: bold;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        padding-bottom: 0.5em;
+}
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #555555;
+}
+a:hover {
+    color: #ff0000;
+}
+p.author {
+        text-align: right;
+}
+</style>
+<title>Premiere AVISynth Plugin v1.95</title>
+</head>
+<body>
+<h1>Premiere AVISynth Plugin v1.95</h1>
+<p>This is an update of the Premiere Avisynth Import Plugin originally written by Ben Rudiak-Gould. It allows Adobe's Premiere video editing package to read Avisynth AVS scripts. It is compatible with all versions of Premiere Pro (now Premiere CS), legacy versions of Premiere (5.x and higher) and Avisynth 2.x. For more details on avisynth, please see <a href="http://www.avisynth.org" target="_blank">http://www.avisynth.org</a>.</p>
+<p>The homepage for the plugin is <a href="http://videoeditorskit.sourceforge.net/">http://videoeditorskit.sourceforge.net</a>, kindly hosted by <a href="http://sourceforge.net/">Sourceforge</a>. Check the webpage for new releases and full source. </p>
+<p>This plugin is licensed under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> and may be modified and redistributed under the terms of that license. Please see the enclosed file <a href="COPYING.txt">COPYING.txt</a>.</p>
+
+<h2>Usage</h2>
+<p>The plugin allows .avs files to be imported to Premiere as regular footage.</p>
+<p>The GUI allows:
+<ul>
+<li>Selecting a video resize algorithm to be used by Premiere</li>
+<li>Switching off audio conforming (Premiere CS4 only)</li>
+<li>Setting the maximum memory used by avisynth (advanced users only)</li>
+</ul>
+</p>
+<h2>Change log</h2>
+<h3>Version 1.95 (16/02/09):</h3>
+<ul>
+<li>Support for CS4</li>
+<li>Support for multi-channel audio (5.1 etc.)</li>
+</ul>
+<h3>Version 1.9 (28/01/07):</h3>
+<ul>
+<li>Access avisynth functionality through avisynth.h rather than through AVIFile</li>
+<li>Use avisynth built-ins for resizing / conversion rather than Virtualdub functions</li>
+<li>Full alpha channel support</li>
+<li>Project Protection - if you load a project with a broken AVS file, the project will stay intact and the missing or damaged file will be replaced by a blank in the timeline.</li>
+<li>Improved installer with support for Premiere 5.x/6.x and Premiere Pro simultaneously</li>
+</ul>
+<h3>Version 1.5:</h3>
+<ul>
+<li>Resize algorithms ported from Avery Lee's <a href="http://www.virtualdub.org/">Virtualdub</a>. Resizing options include Nearest Neighbour, Bilinear, Bicubic (0.75) and Lanczos3 algorithms (Tom Ford)</li>
+<li>External GUI to choose resize algorithm and control Avisynth's SetMemoryMax() value (AbsoluteDestiny)</li>
+<li>Improved NSIS2 installer (AbsoluteDestiny)</li>
+<li>Fixed 24-bit detection producing black screen on some machines (Tom Ford)</li>
+<li>Fixed PPro crash-on-exit (Tom Ford)</li>
+</ul>
+<h3>Version 1.2:</h3>
+<ul>
+<li>Premiere Pro compatibility fix by Anime2Envy -at- insight.rr.com</li>
+<li>Misc 24 bit fixes</li>
+</ul>
+<h3>Version 1.1b:</h3>
+<ul>
+<li>Faster fixed point nearest neighbour resize (60% faster than previous all integer one)</li>
+</ul>
+<h3>Version 1.1:</h3>
+<ul>
+<li>Improved Premiere 5.x Support</li>
+<li>Fixed RGB32 support</li>
+<li>Compiled with VC6 for extra compatibility</li>
+<li>Various plugin code tidying and colourspace efficiency</li>
+</ul>
+<h3>Version 1.0b:</h3>
+<ul>
+<li>Fixed high saturation colour error bug.</li>
+<li>Fixed Blank Screen bug.</li>
+<li>Fixed no-thumbnail bug.</li>
+<li>Code optimised and fixed for compiling with VC7</li>
+</ul>
+<h2>History</h2>
+<p>The import plugin was original written by Ben Rudiak-Gould, original author of avisynth. After Ben's disappearance from the 'net the plugin remained unmaintained for some time and suffered from several bugs.</p>
+<p>AbsoluteDestiny (Ian Roberts) initiated a project to fix these bugs and to bring the plugin up to date. A <a href="http://videoeditorskit.sourceforge.net/">Sourceforge project</a> was setup to coordinate efforts.</p>
+<h2>Acknowledgements</h2>
+<ul>
+<li>Ben Rudiak-Gould - original plugin version</li>
+<li>Ian Roberts (AbsoluteDestiny) [ian@absolutedestiny.org] - plugin improvement project lead</li>
+<li>Tom Ford [tom.ford@compsoc.net]  - programming lead</li>
+</ul>
+<h3>Other thanks</h3>
+<ul>
+<li>Anime2Envy, trythil, Turboneko Studios, turboronin, ErMaC, Valion (useful reference source code), Paul Roberts</li>
+<li>Avery Lee - <a href="http://www.virtualdub.org/">Virtualdub</a> resize algorithms</li>
+</ul>
+<p class="author">Tom Ford [tom.ford@compsoc.net] and Ian Roberts [ian@absolutedestiny.org] - <i>16th Feb 2009</i></p>
+</body>
+</html>
