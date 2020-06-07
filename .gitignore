@@ -14,6 +14,7 @@
 *.userprefs
 
 # Build results
+premiere-headers
 IM_Debug/
 IM_Release/
 [Dd]ebug/
