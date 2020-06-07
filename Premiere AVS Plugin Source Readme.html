@@ -46,27 +46,30 @@ p.author {
         text-align: right;
 }
 </style>
-<title>Premiere AVISynth Plugin v1.95 - Source release</title>
+<title>Premiere AVISynth Plugin v1.96 - Source release</title>
 </head>
 <body>
-<h1>Premiere AVISynth Plugin v1.95 - Source release</h1>
-<p>This is an update of the Premiere Avisynth Import Plugin originally written by Ben Rudiak-Gould. It allows Adobe's Premiere video editing package to read Avisynth AVS scripts.</p>
-<p>It is compatible with Premiere 5.x, 6.x and Premiere Pro 1.x, 2.x, CS3, CS4 and all modern versions of Avisynth.</p>
-<p>The homepage for the plugin is <a href="http://videoeditorskit.sourceforge.net/">http://videoeditorskit.sourceforge.net</a>, kindly hosted by <a href="http://sourceforge.net/">Sourceforge</a>. Check the webpage for new releases and full source.</p>
-<p>This plugin is licensed under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> and may be modified and redistributed under the terms of that license. Please see the enclosed file <a href="COPYING.txt">COPYING.txt</a>. As required by the license, full source is provided.</p>
-<p>Please see the <a href="Premiere%20AVS%20Plugin%20Readme.html">normal readme</a> for further details about the using plugin etc.</p>
-<h2>Building Instructions</h2>
-<h3>Premiere Plugin</h3>
-<p>The plugin comes with a VC6 project file im-avisynth.dsw.</p>
-<p>In order to build you will require the following things:</p>
-<ul>
-<li>VC6SP5</li>
-<li>The headers from the Premiere 6.5/Pro SDK placed in Source/premiere-headers (or somewhere in the include path)</li>
-</ul>
-<p>VC7/VC8 (Visual C++ .net / 2005 / 2008) should also work fine - im-avisynth.vcproj is provided</p>
-<p>The plugin should build with no errors or warnings.</p>
-<h3>GUI</h3>
-<p>The GUI may be built using <a href="http://nsis.sourceforge.net">NSIS version 2</a>. Just run 'makensis.exe PremiereAVSGUI.nsi'.</p>
-<p class="author">Tom Ford [tom.ford@compsoc.net] - <i>16th Feb 2009</i></p>
+  <h1>Premiere AVISynth Plugin v1.96 - Source release</h1>
+  <p>This is an update of the Premiere Avisynth Import Plugin originally written by Ben Rudiak-Gould. It allows Adobe's Premiere video editing package to read Avisynth AVS scripts.</p>
+  <p>It is compatible with Premiere 5.x, 6.x and Premiere Pro 1.x, 2.x, CS3, CS4 and Avisynth 2.6 or Avisynth+.</p>
+  <p>The homepage for the plugin is <a href="http://videoeditorskit.sourceforge.net/">http://videoeditorskit.sourceforge.net</a>, kindly hosted by <a href="http://sourceforge.net/">Sourceforge</a>. Check the webpage for new releases and full source.</p>
+  <p>Plugin was updated in 2020, project moved to github (pinterf)</p>
+  <p>This plugin is licensed under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> and may be modified and redistributed under the terms of that license. Please see the enclosed file <a href="COPYING.txt">COPYING.txt</a>. As required by the license, full source is provided.</p>
+  <p>Please see the <a href="Premiere%20AVS%20Plugin%20Readme.html">normal readme</a> for further details about the using plugin etc.</p>
+  <h2>Building Instructions</h2>
+  <h3>Premiere Plugin</h3>
+  <p>In order to build you will require the following things:</p>
+  <ul>
+    <li>Build environment is (as for 1.96 release) Visual Studio 2019</li>
+    <li>Project moved to github (pinterf)</li>
+    <li>The headers from the Premiere 6.5/Pro SDK placed in Source/premiere-headers (or somewhere in the include path)</li>
+    <li>Download SDK from https://www.adobe.com/devnet/premiere/sdk/cs3.html#</li>
+    <li>As of 2020, actual SDKs (2015-) no longer contain necessary headers for a successful build</li>
+  </ul>
+  <p>The plugin should build with no errors or warnings.</p>
+  <h3>GUI</h3>
+  <p>The GUI may be built using <a href="http://nsis.sourceforge.net">NSIS version 2</a>. Just run 'makensis.exe PremiereAVSGUI.nsi'.</p>
+  <p class="author">Tom Ford [tom.ford@compsoc.net] - <i>16th Feb 2009</i></p>
+
 </body>
 </html>
