@@ -265,7 +265,7 @@ int GetInfo(imStdParms* stdparms, imFileAccessRec* fileInfo, imFileInfoRec* imFi
 	if(!fi->errorCode) {
 		
 		try {
-			fi->scriptEnvironment = CreateScriptEnvironment(AVISYNTH_INTERFACE_VERSION);
+			fi->scriptEnvironment = CreateScriptEnvironment(AVISYNTH_CLASSIC_INTERFACE_VERSION); // V6 is enough
 		}
 		catch(AvisynthError) {
 			
@@ -283,6 +283,8 @@ int GetInfo(imStdParms* stdparms, imFileAccessRec* fileInfo, imFileInfoRec* imFi
 			}
 
 	}
+
+  AVS_linkage = fi->scriptEnvironment->GetAVSLinkage(); // AviSynth Interface V6+
 
 	AVSValue res;
 	const char *errorMsg;
@@ -755,3 +757,6 @@ void AcquirePremiereAudioSuite(imStdParms *stdParms, FileInfo *pfi) {
 		pfi->suiteBasic->AcquireSuite (kPrSDKAudioSuite, kPrSDKAudioSuiteVersion, (const void **)&pfi->suiteAudio);
 	}
 }
+
+const AVS_Linkage* AVS_linkage = 0; // Since AviSynth V6 interface
+
